@@ -634,8 +634,6 @@ input[type="submit"]:hover {
   margin: 0.8rem 0;
   font-size: 1.2rem;
 }
-
-/* CSS */
 .button {
   background-image: linear-gradient(-180deg, #0020d7, #0013bd);
   /* box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px; */
@@ -649,7 +647,10 @@ input[type="submit"]:hover {
   width: fit-content;
   border: 0;
 }
-
-.apply_button:hover {
+.button:hover {
   background: #101992;
+}
+
+.mt_8 {
+  margin-top: 10rem;
 }
