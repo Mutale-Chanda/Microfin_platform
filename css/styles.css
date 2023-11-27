@@ -393,6 +393,52 @@ input[type="submit"]:hover {
   width: 4.5rem;
   height: 4.5rem;
 }
+/********* Mega-Menu *******************/
+.loan_types .sub-menu {
+  position: absolute;
+  z-index: 500;
+  left: 21%;
+  top: 20%;
+  max-width: 55%;
+  max-height: 45rem;
+  background-color: var(--colo-white-1);
+  border-radius: 1rem;
+  box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+  padding: 20px 30px;
+  transition: all 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+@media (min-width: 992px) {
+  .loan_types .menu-item-has-children:hover .sub-menu {
+    /* margin-top: 0; */
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.loan_types .sub-menu-ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+.loan_types .sub-menu-ul-item {
+  border: 1px solid var(--colo-dark-3);
+  border-radius: 1rem;
+  width: 150px;
+  max-height: 40px;
+  padding: 8px 8px;
+  margin: 4px;
+}
+.loan_types .sub-menu-ul-item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* text-align: center; */
+}
+/*********  mega menu ********/
 
 /* mobile nav */
 .mobile_nav {
