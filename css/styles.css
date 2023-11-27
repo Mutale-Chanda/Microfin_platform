@@ -30,10 +30,31 @@ a {
 ul {
   list-style: none;
 }
+img {
+  width: 100%;
+  height: 100%;
+}
+.icon {
+  width: 3rem;
+  height: 3rem;
+  color: rgb(5, 4, 49);
+  margin-right: 0.4rem;
+}
 .container {
   max-width: 130rem;
   margin: 0 auto;
   padding: 0rem 1rem;
+}
+.container_decor {
+  background-color: var(--colo-white-1);
+  border-radius: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-block: 1.6rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 .top_nav {
   width: 100%;
@@ -150,15 +171,6 @@ ul {
   align-items: center;
   font-size: 1.4rem;
 }
-.hero_loan_link .loan_icon {
-  width: 3rem;
-  height: 3rem;
-  color: rgb(5, 4, 49);
-  margin-right: 0.4rem;
-}
-.hero_loan_link .loan_icon img {
-  width: 100%;
-}
 .hero_list li {
   border-bottom: 2px solid #f1e8e8;
   padding: 1rem 2rem;
@@ -177,10 +189,6 @@ ul {
   height: 150px;
   padding: 0;
 }
-.hero_promo .hero_li img {
-  height: 100%;
-  width: 100%;
-}
 
 /* slider css*/
 .slider_container {
@@ -198,10 +206,6 @@ ul {
   border-radius: 0.4rem;
   border-left: 2px solid var(--colo-dark-3);
   border-right: 2px solid var(--colo-dark-3);
-}
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -231,9 +235,46 @@ ul {
   background: var(--colo-dark-1);
 }
 
+/******** Jumbotron **********/
+.jumbotron {
+  background-color: #090ca3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 8rem;
+  max-width: 135rem;
+}
+.jumbotron .jumbotron-content {
+  margin-left: 0%;
+  margin-right: 5%;
+  text-align: left;
+  padding-block: 5%;
+}
+.jumbotron .jumbotron-content h1 {
+  font-weight: 900;
+  color: #fff;
+  padding-left: 15px;
+  border-left: 15px solid #f15d06;
+  font-size: 3rem;
+}
+@media (max-width: 767px) {
+  .jumbotron .jumbotron-content h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1300px) {
+  .jumbotron {
+    margin: 8rem auto 0;
+  }
+}
+/****** end of Jumbotron style *******/
+
 /* section */
 .section {
   margin-top: 8rem;
+}
+.intro_section,
+.loans_section {
+  margin-top: 2.4rem;
 }
 .section_header {
   margin-bottom: 4rem;
@@ -247,12 +288,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   grid-gap: 2rem;
-}
-.microfins_container {
-  background-color: var(--colo-white-1);
-  border-radius: 1rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 /* cards */
@@ -541,4 +576,80 @@ input[type="submit"]:hover {
   .hamburger {
     display: block;
   }
+}
+
+/******** LENDER PAGE ***********/
+.section_sm,
+.mt__sm {
+  margin-top: 2.4rem;
+}
+.loans_section .section_header,
+.section_header {
+  padding-top: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.loans_section .section_header > h2,
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.offering_list .loan {
+  margin: 0rem 1rem 1rem;
+  border-bottom: 2px solid #f1e8e8;
+  border-radius: 1rem;
+  padding: 0.5rem 1.6rem;
+  max-width: 18rem;
+  /* padding: 1rem 2rem; */
+}
+.offering_list .loan .loan_link,
+.social_link {
+  color: var(--colo-dark-1);
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.requirements_list li::before,
+.interest_rates_list li::before {
+  content: "+";
+  color: #d14b17;
+  margin-right: 5px;
+}
+.interest_rate_note ::before {
+  content: "*";
+  color: #ff0000;
+  margin-left: 5px;
+}
+.sub {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  color: #ff0000;
+}
+.social_item {
+  margin: 0rem 1rem 1rem;
+  border: 2px solid #f1e8e8;
+  border-radius: 1rem;
+  padding: 0.5rem 1.6rem;
+}
+.conditions_list .condition {
+  margin: 0.8rem 0;
+  font-size: 1.2rem;
+}
+
+/* CSS */
+.button {
+  background-image: linear-gradient(-180deg, #0020d7, #0013bd);
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px; */
+  color: #ffffff;
+  margin: 2.4rem 0 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 10px;
+  text-align: center;
+  width: fit-content;
+  border: 0;
+}
+
+.apply_button:hover {
+  background: #101992;
 }
