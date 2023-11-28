@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    "
+    />
+    <!-- jQuery first then Popper.js and then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Loan</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav_container">
+        <a href="#" class="nav_logo">MICROFIN PLATFORM</a>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="/" class="nav_link"> Home </a>
+          </li>
+          <li class="nav_item">
+            <a href="all_microfins.html" class="nav_link">Microfins</a>
+          </li>
+          <li class="nav_item"><a href="#" class="nav_link">Loans</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+        </ul>
+        <span class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="/" class="mobile_nav_link">Home</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Microfins</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Loans</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">About</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/sign-up.html" class="mobile_nav_link">Account</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="jumbotron-content">
+        <h1>LOAN APPLICATION</h1>
+      </div>
+    </div>
+
+    <section class="intro_section">
+      <div class="container container_decor">
+        <div class="section_header row_">
+          <div class="icon">
+            <img src="./image/loan_type/car-48.png" alt="" />
+          </div>
+          <h2 class="section_title">Auto-Loan</h2>
+        </div>
+        <p class="page-intro">
+          Auto loan is a Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Assumenda ab rerum placeat, sunt delectus maiores magnam
+          reiciendis eaque tenetur nisi quod temporibus eum eligendi ratione
+          distinctio expedita neque alias, animi fugiat voluptates iusto? Rem,
+          a! Dicta quam recusandae et cum, voluptatibus debitis hic nesciunt.
+          Asperiores alias saepe deserunt ipsum!
+        </p>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Launch static backdrop modal
+        </button>
+
+        <div class="form_section">
+          <form action="">
+            <div class="group">
+              <input type="text" name="firstname" id="firstname" required />
+              <label for="firstname">Firstname</label>
+            </div>
+            <div class="group">
+              <input type="text" name="lastname" id="lastname" required />
+              <label for="lastname">Lastname</label>
+            </div>
+            <div class="group top_label">
+              <input type="date" name="dob" id="dob" required />
+              <label for="dob">Date of birth</label>
+            </div>
+            <div class="group">
+              <input type="email" name="email" id="email" required />
+              <label for="email">Email</label>
+            </div>
+            <div class="group">
+              <input
+                type="text"
+                name="phone_number"
+                id="phone_number"
+                required
+              />
+              <label for="phone_number">Phone Number</label>
+            </div>
+            <div class="group">
+              <input type="text" name="nrc" id="nrc" required />
+              <label for="nrc">NRC</label>
+            </div>
+            <div class="group">
+              <input type="text" name="address" id="address" required />
+              <label for="address">Address</label>
+            </div>
+            <div class="group">
+              <input type="text" name="occupation" id="occupation" required />
+              <label for="occupation">Occupation</label>
+            </div>
+            <div class="group">
+              <input
+                type="text"
+                name="monthly_income"
+                id="monthly_income"
+                required
+              />
+              <label for="monthly_income">Monthly Income</label>
+            </div>
+            <div class="group">
+              <input type="text" name="amount" id="amount" required />
+              <label for="amount">Loan Amount</label>
+            </div>
+            <div class="group">
+              <input
+                type="text"
+                name="payment_period"
+                id="payment_period"
+                required
+              />
+              <label for="payment_period">Payment Period</label>
+            </div>
+            <button type="submit" class="button loan_form_btn">Apply</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="group">
+                <input type="text" name="firstname" id="firstname" required />
+                <label for="firstname">Firstname</label>
+              </div>
+              <div class="group">
+                <input type="text" name="lastname" id="lastname" required />
+                <label for="lastname">Lastname</label>
+              </div>
+              <div class="group top_label">
+                <input type="date" name="dob" id="dob" required />
+                <label for="dob">Date of birth</label>
+              </div>
+              <div class="group">
+                <input type="email" name="email" id="email" required />
+                <label for="email">Email</label>
+              </div>
+              <div class="group">
+                <input
+                  type="text"
+                  name="phone_number"
+                  id="phone_number"
+                  required
+                />
+                <label for="phone_number">Phone Number</label>
+              </div>
+              <div class="group">
+                <input type="text" name="nrc" id="nrc" required />
+                <label for="nrc">NRC</label>
+              </div>
+              <div class="group">
+                <input type="text" name="address" id="address" required />
+                <label for="address">Address</label>
+              </div>
+              <div class="group">
+                <input type="text" name="occupation" id="occupation" required />
+                <label for="occupation">Occupation</label>
+              </div>
+              <div class="group">
+                <input
+                  type="text"
+                  name="monthly_income"
+                  id="monthly_income"
+                  required
+                />
+                <label for="monthly_income">Monthly Income</label>
+              </div>
+              <div class="group">
+                <input type="text" name="amount" id="amount" required />
+                <label for="amount">Loan Amount</label>
+              </div>
+              <div class="group">
+                <input
+                  type="text"
+                  name="payment_period"
+                  id="payment_period"
+                  required
+                />
+                <label for="payment_period">Payment Period</label>
+              </div>
+              <button type="submit" class="button_ loan_form_btn">Apply</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_item">
+          <a href="#" class="footer_logo">MICROFIN PLATFORM</a>
+          <div class="footer_description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem fuga harum voluptate?
+          </div>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_title">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Lusaka, Zambia</li>
+            <li class="li footer_list_item">email@mail.com</li>
+            <li class="li footer_list_item">+260 000 000 000</li>
+            <li class="li footer_list_item">+260 xxx xxx xxx</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_title">Usefull Links</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Home</li>
+            <li class="li footer_list_item">Microfins</li>
+            <li class="li footer_list_item">Loans</li>
+            <li class="li footer_list_item">About</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_title">Info</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Privacy policy</li>
+            <li class="li footer_list_item">Terms of use</li>
+            <li class="li footer_list_item">FAQ's</li>
+            <li class="li footer_list_item">Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container footer_bottom_container">
+          <p class="footer_copy">
+            Copyright Exclusive 2023. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/50b711f575.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

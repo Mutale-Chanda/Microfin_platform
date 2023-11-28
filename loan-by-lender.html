@@ -8,6 +8,27 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    "
+    />
+    <!-- jQuery first then Popper.js and then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Home</title>
   </head>
@@ -19,7 +40,9 @@
           <li class="nav_item">
             <a href="/" class="nav_link"> Home </a>
           </li>
-          <li class="nav_item"><a href="#" class="nav_link">Microfins</a></li>
+          <li class="nav_item">
+            <a href="all_microfins.html" class="nav_link">Microfins</a>
+          </li>
           <li class="nav_item"><a href="#" class="nav_link">Loans</a></li>
           <li class="nav_item"><a href="#" class="nav_link">About</a></li>
         </ul>
@@ -104,14 +127,22 @@
             </div>
           </ul>
         </div>
-        <button class="button" role="button">Apply for loan</button>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="button"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Apply for loan
+        </button>
         <div class="mt__sm">
           <div class="section_header">
             <h2 class="heading">Get in touch with us</h2>
           </div>
-          <ul class="socials row">
+          <ul class="socials row_">
             <li class="social_item">
-              <a href="#" class="social_link row">
+              <a href="#" class="social_link row_">
                 <div class="icon">
                   <img src="./image/socials/link-48.png" alt="" />
                 </div>
@@ -119,7 +150,7 @@
               </a>
             </li>
             <li class="social_item">
-              <a href="#" class="social_link row">
+              <a href="#" class="social_link row_">
                 <div class="icon">
                   <img src="./image/socials/email-48.png" alt="" />
                 </div>
@@ -127,7 +158,7 @@
               </a>
             </li>
             <li class="social_item">
-              <a href="#" class="social_link row">
+              <a href="#" class="social_link row_">
                 <div class="icon">
                   <img src="./image/socials/linkedin-48.png" alt="" />
                 </div>
@@ -135,7 +166,7 @@
               </a>
             </li>
             <li class="social_item">
-              <a href="#" class="social_link row">
+              <a href="#" class="social_link row_">
                 <div class="icon">
                   <img src="./image/socials/facebook-48.png" alt="" />
                 </div>
@@ -143,7 +174,7 @@
               </a>
             </li>
             <li class="social_item">
-              <a href="#" class="social_link row">
+              <a href="#" class="social_link row_">
                 <div class="icon">
                   <img src="./image/socials/twitterx-48.png" alt="" />
                 </div>
@@ -151,7 +182,7 @@
               </a>
             </li>
             <li class="social_item">
-              <a href="#" class="social_link row">
+              <a href="#" class="social_link row_">
                 <div class="icon">
                   <img src="./image/socials/whatsapp-48.png" alt="" />
                 </div>
@@ -159,7 +190,7 @@
               </a>
             </li>
             <li class="social_item">
-              <a href="#" class="social_link row">
+              <a href="#" class="social_link row_">
                 <div class="icon">
                   <img src="./image/socials/mobile-48.png" alt="" />
                 </div>
@@ -278,6 +309,107 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Loan Application
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="group">
+                <input type="text" name="firstname" id="firstname" required />
+                <label for="firstname">Firstname</label>
+              </div>
+              <div class="group">
+                <input type="text" name="lastname" id="lastname" required />
+                <label for="lastname">Lastname</label>
+              </div>
+              <div class="group top_label">
+                <input type="date" name="dob" id="dob" required />
+                <label for="dob">Date of birth</label>
+              </div>
+              <div class="group">
+                <input type="email" name="email" id="email" required />
+                <label for="email">Email</label>
+              </div>
+              <div class="group">
+                <input
+                  type="text"
+                  name="phone_number"
+                  id="phone_number"
+                  required
+                />
+                <label for="phone_number">Phone Number</label>
+              </div>
+              <div class="group">
+                <input type="text" name="nrc" id="nrc" required />
+                <label for="nrc">NRC</label>
+              </div>
+              <div class="group">
+                <input type="text" name="address" id="address" required />
+                <label for="address">Address</label>
+              </div>
+              <div class="group">
+                <input type="text" name="occupation" id="occupation" required />
+                <label for="occupation">Occupation</label>
+              </div>
+              <div class="group">
+                <input
+                  type="text"
+                  name="monthly_income"
+                  id="monthly_income"
+                  required
+                />
+                <label for="monthly_income">Monthly Income</label>
+              </div>
+              <div class="group">
+                <input type="text" name="amount" id="amount" required />
+                <label for="amount">Loan Amount</label>
+              </div>
+              <div class="group">
+                <input
+                  type="text"
+                  name="payment_period"
+                  id="payment_period"
+                  required
+                />
+                <label for="payment_period">Payment Period</label>
+              </div>
+              <button type="submit" class="button loan_form_btn">Apply</button>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Understood</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
