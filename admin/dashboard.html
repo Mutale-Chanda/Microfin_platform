@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    "
+    />
+    <!-- jQuery first then Popper.js and then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+    "></script>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Admin - Dashboard</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav_container">
+        <a href="/" class="nav_logo">MICROFIN PLATFORM</a>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="/" class="nav_link"> Home </a>
+          </li>
+          <li class="nav_item">
+            <a href="all_microfins.html" class="nav_link">Microfins</a>
+          </li>
+          <li class="nav_item"><a href="#" class="nav_link">Loans</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+        </ul>
+        <span class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="/" class="mobile_nav_link">Home</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Microfins</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Loans</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">About</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/sign-up.html" class="mobile_nav_link">Account</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="body_content">
+      <div class="sidebar_">
+        <ul class="sidebar_ul">
+          <li class="sidebar_li"><a href="#">Home</a></li>
+          <li class="sidebar_li"><a href="#">Institution</a></li>
+          <li class="sidebar_li"><a href="#">Loans</a></li>
+          <li class="sidebar_li"><a href="#">Socials</a></li>
+        </ul>
+      </div>
+      <main>
+        <div class="main_title container_decor">
+          <h1>Dashboard</h1>
+        </div>
+        <div class="dash">
+          <div class="box box_loans">
+            <div class="stats">
+              <div class="stats_value">3</div>
+              <p class="stats_description">Loan Types Entered</p>
+            </div>
+          </div>
+          <div class="box box_socials">
+            <div class="stats">
+              <div class="stats_value">1</div>
+              <p class="stats_description">Social Links Added</p>
+            </div>
+          </div>
+          <div class="box box_complete">
+            <div class="stats">
+              <span class="stats_value">97%</span>
+              <p class="stats_description">Info Complete</p>
+            </div>
+          </div>
+        </div>
+        <section class="institution_section container_decor">
+          <div class="logo_and_details">
+            <div class="logo"></div>
+            <a href="#" class="actions">edit</a>
+            <div class="institution_details">
+              <p class="institution_name">MICROFIN Z</p>
+              <p class="institution_summary">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+                provident animi earum tempore hic distinctio adipisci vel
+                laudantium fuga quod nobis debitis, odit similique ratione
+                consectetur nesciunt aliquid minima pariatur? Hic aliquid vero
+                velit ducimus architecto veniam repellat. Ducimus tempora nemo
+                suscipit praesentium repellat debitis dolorem facilis tenetur
+                cum harum. Reiciendis aliquid fugit necessitatibus quia ipsum
+                veniam vel reprehenderit quisquam? At, molestiae veniam! Cumque
+                molestiae ex quam, tempora eaque dolor, ratione perferendis
+                reprehenderit ullam incidunt totam! Mollitia pariatur soluta ab.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="loans_area container_decor">
+          <div class="section_title_with_action">
+            <div class="title">Loan Types</div>
+            <a href="#" class="btn btn-lg btn-success">Add +</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="socials_area container_decor">
+          <div class="section_title_with_action">
+            <div class="title">Social Links</div>
+            <a href="#" class="btn btn-lg btn-success">Add +</a>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Icon</th>
+                <th scope="col">Name</th>
+                <th scope="col">Link</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="../image/socials/whatsapp-48.png"
+                    alt=""
+                    class="icon"
+                  />
+                </td>
+                <td>Whatsapp</td>
+                <td>26090000000</td>
+                <td>
+                  <a href="#" class="btn btn-lg btn-warning">edit</a>
+                  <a href="#" class="btn btn-lg btn-danger">delete</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../image/socials/mobile-48.png"
+                    alt=""
+                    class="icon"
+                  />
+                </td>
+                <td>Phone</td>
+                <td>2609XXXXXXXX</td>
+                <td>
+                  <a href="#" class="btn btn-lg btn-warning">edit</a>
+                  <a href="#" class="btn btn-lg btn-danger">delete</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../image/socials/email-48.png"
+                    alt=""
+                    class="icon"
+                  />
+                </td>
+                <td>Email</td>
+                <td>lender@mail.com</td>
+                <td>
+                  <a href="#" class="btn btn-lg btn-warning">edit</a>
+                  <a href="#" class="btn btn-lg btn-danger">delete</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="../image/socials/facebook-48.png"
+                    alt=""
+                    class="icon"
+                  />
+                </td>
+                <td>Facebook</td>
+                <td>https://www.facebook.com/lender</td>
+                <td>
+                  <a href="#" class="btn btn-lg btn-warning">edit</a>
+                  <a href="#" class="btn btn-lg btn-danger">delete</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="../image/socials/link-48.png" alt="" class="icon" />
+                </td>
+                <td>Website</td>
+                <td>https://www.lenderswebsite.com/</td>
+                <td>
+                  <a href="#" class="btn btn-lg btn-warning">edit</a>
+                  <a href="#" class="btn btn-lg btn-danger">delete</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/50b711f575.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
